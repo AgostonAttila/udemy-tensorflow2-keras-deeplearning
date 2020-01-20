@@ -1,0 +1,55 @@
+NumPy:
+---------------Arrays-------------------------
+np.array(my_matrix)
+np.arange(0,10)
+np.arange(0,11,2) 0 és 11 között 2esével
+np.zeros(5) nullák
+np.zeros((5,5))
+np.ones(3) egyesek
+np.linspace(0,5,20) 0 és 5 között 20 elem
+np.eye(4) 4*4 mátrix 1es átlóval
+np.random.rand(5,5) random 5*5 mátrix
+np.random.randn(2)
+np.random.randint(1,100) =61
+np.random.randint(1,100,10) 10db véletlen
+
+np.random.seed(42)
+np.random.rand(4) ugyanaz a 4 szám lesz mert a seedvalue uaz
+
+Usef.
+arr = np.arange(25)
+ranarr = np.random.randint(0,50,10) 
+
+arr.reshape(5,5) vector -> matrix
+
+ranarr.max()
+ranarr.argmax() max indexe
+ranarr.min()
+ranarr.argmin()
+ranarr.dtype
+
+---------------Indexing-------------------------
+arr = np.arange(0,11)
+arr[8]
+arr[1:5] 1-tól 5ig
+arr[:8] 8ig 0tól
+arr[8:] 8tól a végéig
+arr[0:5]=100 elsõ 5 száz
+slice_of_arr = arr[0:6]
+slice_of_arr[:]=99 minden 99 eredetit is átírja
+arr_copy = arr.copy()
+
+array([[ 5, 10, 15],
+       [20, 25, 30],
+       [35, 40, 45]])
+arr_2d[1] elsõ sor
+arr_2d[1][0] = 20
+
+arr_2d[:2,1:]
+array([[10, 15],
+       [25, 30]])
+
+arr > 4
+
+arr[bool_arr] filtereli a bool_arr elemeket
+arr[arr>2]
