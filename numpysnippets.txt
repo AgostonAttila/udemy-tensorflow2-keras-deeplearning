@@ -53,3 +53,26 @@ arr > 4
 
 arr[bool_arr] filtereli a bool_arr elemeket
 arr[arr>2]
+-------------- Operations----------
+
+
+arr + arr
+arr * arr
+arr - arr
+arr + 5 minden elemhez 5
+arr**3
+np.sqrt(arr)
+np.exp(arr)
+np.sin(arr)
+np.log(arr)
+arr.sum()
+arr.mean()
+arr.max()
+arr.var() 
+arr.std() 
+
+
+arr_2d.sum(axis=0) oszlopok összege   1 sorok összege
+arr_2d.shape
+
+------------------Exercises-------------------
