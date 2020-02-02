@@ -1,0 +1,43 @@
+conda install pandas
+pip install pandas
+
+import numpy as np
+import pandas as pd
+
+-------------------Series----------------------
+
+labels = ['a','b','c'] van szöveg is
+
+labels = ['a','b','c']
+my_list = [10,20,30]
+arr = np.array([10,20,30])
+d = {'a':10,'b':20,'c':30}
+
+pd.Series(data=my_list)
+pd.Series(data=my_list,index=labels)
+pd.Series(my_list,labels)
+
+pd.Series(arr,labels)
+pd.Series(d)
+
+pd.Series([sum,print,len])
+
+sales_Q1 = pd.Series(data=[250,450,200,150],index = ['USA', 'China','India', 'Brazil'])                        
+sales_Q1['USA']
+
+sales_Q1 + sales_Q2
+
+
+----------------Data Frames-------------
+
+from numpy.random import randint
+
+columns= ['W', 'X', 'Y', 'Z'] # four columns
+index= ['A', 'B', 'C', 'D', 'E'] # five rows
+
+np.random.seed(42)
+data = randint(-100,100,(5,4))
+df = pd.DataFrame(data,index,columns)
+
+https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html
+

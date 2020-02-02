@@ -4,3 +4,5 @@ conda install pip
 pip install -r requirements.txt
 jupyter notebook
 
+https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html
+
